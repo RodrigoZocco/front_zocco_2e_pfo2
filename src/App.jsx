@@ -1,28 +1,20 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import Testimonials from './components/Testimonials'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Divider from './components/Divider'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Portada from "./pages/Portada";
+import ClaudeLanding from "./pages/ClaudeLanding";
+import OpenaiLanding from "./pages/OpenaiLanding";
+import Prompt from "./pages/Prompt";
 
 export default function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Divider />
-        <About />
-        <Divider />
-        <Services />
-        <Divider />
-        <Testimonials />
-        <Divider />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Portada />} />
+        <Route path="/prompt" element={<Prompt />} />
+        <Route path="/claude" element={<ClaudeLanding />} />
+        <Route path="/agente2" element={<OpenaiLanding />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
+

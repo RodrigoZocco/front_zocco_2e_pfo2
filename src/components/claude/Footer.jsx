@@ -1,5 +1,5 @@
-import { FOOTER_LINKS, SOCIAL_LINKS } from '../data/content'
-import styles from './Footer.module.css'
+import { FOOTER_LINKS, SOCIAL_LINKS } from "../../data/content";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
@@ -10,8 +10,8 @@ export default function Footer() {
             Nexa<span>Flow</span>
           </a>
           <p>
-            Automatización inteligente para equipos latinoamericanos.
-            Sin código, sin fricciones.
+            Automatización inteligente para equipos latinoamericanos. Sin
+            código, sin fricciones.
           </p>
           <div className={styles.socials}>
             {SOCIAL_LINKS.map((s) => (
@@ -42,7 +42,10 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottom}>
-        <p>© 2025 NexaFlow S.A.S. — Buenos Aires, Argentina. Todos los derechos reservados.</p>
+        <p>
+          © 2025 NexaFlow S.A.S. — Buenos Aires, Argentina. Todos los derechos
+          reservados.
+        </p>
         <div className={styles.badges}>
           <span className={styles.badge}>ISO 27001</span>
           <span className={styles.badge}>SOC 2 Type II</span>
@@ -50,5 +53,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
+

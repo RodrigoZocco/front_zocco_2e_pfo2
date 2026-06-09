@@ -1,11 +1,11 @@
-import { TESTIMONIALS } from '../data/content'
-import styles from './Testimonials.module.css'
+import { TESTIMONIALS } from "../../data/content";
+import styles from "./Testimonials.module.css";
 
 const avatarColorMap = {
   purple: styles.avPurple,
   green: styles.avGreen,
   amber: styles.avAmber,
-}
+};
 
 export default function Testimonials() {
   return (
@@ -17,7 +17,8 @@ export default function Testimonials() {
             Lo que dicen los equipos que ya automatizaron
           </h2>
           <p className={styles.desc}>
-            No lo decimos nosotros. Lo dicen los equipos que usan NexaFlow todos los días.
+            No lo decimos nosotros. Lo dicen los equipos que usan NexaFlow todos
+            los días.
           </p>
         </div>
 
@@ -27,7 +28,11 @@ export default function Testimonials() {
               <div className={styles.stars}>★★★★★</div>
               <p className={styles.quote}>{t.quote}</p>
               <div className={styles.author}>
-                <div className={`${styles.avatar} ${avatarColorMap[t.avatarColor]}`}>
+                <div
+                  className={`${styles.avatar} ${
+                    avatarColorMap[t.avatarColor]
+                  }`}
+                >
                   {t.initials}
                 </div>
                 <div>
@@ -40,5 +45,6 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }
+

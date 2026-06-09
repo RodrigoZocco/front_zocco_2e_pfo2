@@ -1,5 +1,5 @@
-import { HERO_STATS } from '../data/content'
-import styles from './Hero.module.css'
+import { HERO_STATS } from "../../data/content";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
@@ -10,13 +10,14 @@ export default function Hero() {
       </div>
 
       <h1 className={styles.heading}>
-        Automatiza lo que frenaba<br />
+        Automatiza lo que frenaba
+        <br />
         <span className={styles.gradient}>el crecimiento de tu negocio</span>
       </h1>
 
       <p className={styles.sub}>
-        NexaFlow conecta tus herramientas, elimina tareas manuales y libera a tu equipo
-        para hacer lo que realmente importa. Sin código, sin fricciones.
+        NexaFlow conecta tus herramientas, elimina tareas manuales y libera a tu
+        equipo para hacer lo que realmente importa. Sin código, sin fricciones.
       </p>
 
       <div className={styles.actions}>
@@ -37,5 +38,6 @@ export default function Hero() {
         ))}
       </div>
     </section>
-  )
+  );
 }
+

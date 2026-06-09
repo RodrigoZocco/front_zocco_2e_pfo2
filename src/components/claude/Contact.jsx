@@ -1,30 +1,30 @@
-import { useState } from 'react'
-import { SERVICE_INTERESTS } from '../data/content'
-import styles from './Contact.module.css'
+import { useState } from "react";
+import { SERVICE_INTERESTS } from "../../data/content";
+import styles from "./Contact.module.css";
 
 const INITIAL = {
-  nombre: '',
-  apellido: '',
-  email: '',
-  empresa: '',
-  servicio: '',
-  mensaje: '',
-}
+  nombre: "",
+  apellido: "",
+  email: "",
+  empresa: "",
+  servicio: "",
+  mensaje: "",
+};
 
 export default function Contact() {
-  const [form, setForm] = useState(INITIAL)
-  const [sent, setSent] = useState(false)
+  const [form, setForm] = useState(INITIAL);
+  const [sent, setSent] = useState(false);
 
   const handleChange = (e) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
-  }
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setSent(true)
-    setForm(INITIAL)
-    setTimeout(() => setSent(false), 4000)
-  }
+    e.preventDefault();
+    setSent(true);
+    setForm(INITIAL);
+    setTimeout(() => setSent(false), 4000);
+  };
 
   return (
     <section id="contact" className={styles.section}>
@@ -34,8 +34,9 @@ export default function Contact() {
             <p className={styles.tag}>Contacto</p>
             <h2 className={styles.heading}>Hablemos de tu proyecto</h2>
             <p className={styles.desc}>
-              Contanos brevemente qué querés automatizar y uno de nuestros especialistas
-              te va a contactar en menos de 24 horas hábiles con una propuesta concreta.
+              Contanos brevemente qué querés automatizar y uno de nuestros
+              especialistas te va a contactar en menos de 24 horas hábiles con
+              una propuesta concreta.
             </p>
 
             <div className={styles.details}>
@@ -125,7 +126,9 @@ export default function Contact() {
                   >
                     <option value="">Seleccioná una opción</option>
                     {SERVICE_INTERESTS.map((opt) => (
-                      <option key={opt} value={opt}>{opt}</option>
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -154,5 +157,6 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }
+

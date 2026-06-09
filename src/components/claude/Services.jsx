@@ -1,5 +1,5 @@
-import { SERVICES } from '../data/content'
-import styles from './Services.module.css'
+import { SERVICES } from "../../data/content";
+import styles from "./Services.module.css";
 
 const iconColorMap = {
   purple: styles.iconPurple,
@@ -8,13 +8,13 @@ const iconColorMap = {
   pink: styles.iconPink,
   blue: styles.iconBlue,
   red: styles.iconRed,
-}
+};
 
 const tagColorMap = {
   purple: styles.tagPurple,
   green: styles.tagGreen,
   amber: styles.tagAmber,
-}
+};
 
 export default function Services() {
   return (
@@ -26,8 +26,8 @@ export default function Services() {
             Todo lo que necesitás para escalar sin complicaciones
           </h2>
           <p className={styles.desc}>
-            Seis soluciones que se integran entre sí y con tus herramientas existentes.
-            Empezá con una, sumá las demás cuando las necesités.
+            Seis soluciones que se integran entre sí y con tus herramientas
+            existentes. Empezá con una, sumá las demás cuando las necesités.
           </p>
         </div>
 
@@ -47,5 +47,6 @@ export default function Services() {
         </div>
       </div>
     </section>
-  )
+  );
 }
+
