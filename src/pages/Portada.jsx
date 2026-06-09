@@ -21,8 +21,8 @@ export default function Portada() {
         Ir a Landing Page generada por Claude Code (Claude Sonnet)
       </Link>
 
-      <Link to="/agente2">
-        Ir a Landing Page generada por OpenAI (FALTA CONSTRUIRLA)
+      <Link to="/openai">
+        Ir a Landing Page generada por OpenAI (5.5)
       </Link>
     </div>
   );

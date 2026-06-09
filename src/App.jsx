@@ -12,7 +12,7 @@ export default function App() {
         <Route path="/" element={<Portada />} />
         <Route path="/prompt" element={<Prompt />} />
         <Route path="/claude" element={<ClaudeLanding />} />
-        <Route path="/agente2" element={<OpenaiLanding />} />
+        <Route path="/openai" element={<OpenaiLanding />} />
       </Routes>
     </BrowserRouter>
   );
